@@ -13,6 +13,7 @@ The board offers the following features:
 * __Pico Powered__ : powered with Raspberry-Pi Pico 2 microcontroler. 
 * __MicroPython Powered__ : this solution is written in python. The code can be tuned to your need. See the technical documentation for schematic and details.
 * __5V Powered__ : the entire project runs with 5V micro-USB power supply.
+* [Schematic](docs/_static/4G-Base-Station-Schematic-r1.jpg)
 
 # Projects
 Open-Source projects developped with MicroPython for the 4G Base Station board.
