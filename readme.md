@@ -87,7 +87,9 @@ The SMS-control is based on __keyword__ commannd (up to 10 chars) accompagned wi
 
 The SMS-control already contains some basic keywords (see user manual) and is designed to easily implement your own __keyword__ and actions.
 
-Unlike Gate-control project, the SMS-control doesn't implement security features. Anyway, user code can surchage the `is_auth()` method to restrict the sender to some phone number (see example).
+![Example of SMS](docs/_static/SMS-Control-examples.jpg)
+
+To make it simplier, the SMS-control doesn't implement security features (as the Gate-Control does). Whatever, user code can surchage the `is_auth()` method to restrict the sender to some phone number (see example).
 
 The [User manual (sms-control.pdf)](examples/sms-control/sms-control.pdf)  introduces all the details required use and program the SMS-control.
 
