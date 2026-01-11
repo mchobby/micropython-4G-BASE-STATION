@@ -77,6 +77,37 @@ Which can be easily tested as shown on the picture here below:
 
 ![expanding gate control application](examples/gate-control/test_myapp.jpg)
 
+## SMS-control
+
+The aim of the [SMS-control project](examples/sms-control) is to control devices with SMS messages.
+
+![SMS Control](docs/_static/SMS-Control.jpg)
+
+The SMS-control is based on __keyword__ commannd (up to 10 chars) accompagned with 2 optionals parameters (coma separated).
+
+The SMS-control already contains some basic keywords (see user manual) and is designed to easily implement your own __keyword__ and actions.
+
+Unlike Gate-control project, the SMS-control doesn't implement security features. Anyway, user code can surchage the `is_auth()` method to restrict the sender to some phone number (see example).
+
+The [User manual (sms-control.pdf)](examples/sms-control/sms-control.pdf)  introduces all the details required use and program the SMS-control.
+
+# Wiring
+
+## Alarm PIR Sensor
+The opto-isolated inputs can be used to wire PIR ALARM sensor, the kind sensors used to detect movement in a room.
+
+![PIR Sensor](docs/_static/4G-BASE-STATION-with-PIR-SENSOR-476.jpg)
+
+Using higher voltage signal is quite handy to avoids noise disturbance. 
+
+Due to sensor and input electronic, the INPUT is:
+
+* __LOW__ : when intrusion is detected.
+* __HIGH__ : when nothing occurs.
+
+Such sensors __can be daisy chained__ on a single input (as shown on the [PIR-SENSOR-476 wiki page](https://wiki.mchobby.be/index.php?title=Micropython-PIR-alarm) )
+
 # Shopping list
 
 * [4G-Base-Station kit is available at MCHobby](https://shop.mchobby.be/fr/nouveaute/2888-4g-base-station-4g-controled-board-with-relays-and-optocoupled-input-micopython-ready-3232100028883.html)
+* [PIR-SENSOR-476 : Alarm PIR sensor (covering 10 x 10m room)](https://shop.mchobby.be/product.php?id_product=2890)
